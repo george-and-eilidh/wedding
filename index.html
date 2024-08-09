@@ -46,6 +46,7 @@
             font-weight: 300;
         }
         p {
+            font-family: 'Cormorant Garamond', serif;
             font-size: 1em;
             line-height: 1.6;
             max-width: 500px;
@@ -57,12 +58,28 @@
             margin-bottom: 10px;
             color: #8b8b8b;
         }
+        .couple-image {
+            width: 150px;
+            height: 150px;
+            margin: 20px auto;
+            border-radius: 0%;
+            overflow: hidden;
+            border: 0px solid #fff;
+        }
+        .couple-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
     <div class="bg-image"></div>
     <div class="container">
         <h1>George & Eilidh</h1>
+        <div class="couple-image">
+          <img src="media/shell.png" alt="George and Eilidh">
+        </div>
         <p class="date">August 30, 2025</p>
         <p>East Lothian, Scotland</p>
     </div>
