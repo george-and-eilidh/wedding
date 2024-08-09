@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George & Eilidh's Wedding</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            background-color: #f9f7f5;
+        }
+        .bg-image {
+            background-image: url('https://source.unsplash.com/1600x900/?wedding,flowers');
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: brightness(0.7);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 40px 60px;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            color: #4a4a4a;
+            font-weight: 300;
+        }
+        p {
+            font-size: 1em;
+            line-height: 1.6;
+            max-width: 500px;
+            margin: 0 auto 20px;
+        }
+        .date {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #8b8b8b;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-image"></div>
+    <div class="container">
+        <h1>George & Eilidh</h1>
+        <p class="date">August 30, 2025</p>
+        <p>East Lothian, Scotland</p>
+    </div>
+</body>
+</html>
