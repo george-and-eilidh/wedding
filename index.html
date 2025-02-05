@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="refresh" content="1; url=https://george-and-eilidh-get-married.up.railway.app/">
+    <script>
+        window.location.href = "https://george-and-eilidh-get-married.up.railway.app/"
+      </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>George & Eilidh's Wedding</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <style>
         body, html {
             height: 100%;
@@ -61,9 +66,8 @@
             line-height: 1.6;
             max-width: 500px;
             margin: 0 auto 20px;
-        }
-        a:link {
-            color: #8b8b8b
+            text-decoration: none;
+            color: #8b8b8b;
         }
         .date {
             font-family: 'Cormorant Garamond', serif;
@@ -84,6 +88,19 @@
             height: 100%;
             object-fit: cover;
         }
+        .more-info {
+            cursor: pointer;
+            color: #8b8b8b;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25em;
+        }
+        .more-info:hover {
+            text-decoration: underline;
+        }
+        .register-link {
+            display: none;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -95,7 +112,28 @@
         </div>
         <p class="date">30th August 2025</p>
         <p>East Lothian, Scotland</p>
-        <a href="https://forms.gle/yuAkXNWyfUSxJS249">Register</a>
+        <div class="more-info" onclick="toggleRegister()">
+            More Info <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="register-link">
+            <a href="https://george-and-eilidh-get-married.up.railway.app/">Enter Site</a>
+        </div>
     </div>
+
+    <script>
+        function toggleRegister() {
+            var registerLink = document.querySelector('.register-link');
+            var moreInfo = document.querySelector('.more-info i');
+            if (registerLink.style.display === 'none' || registerLink.style.display === '') {
+                registerLink.style.display = 'block';
+                moreInfo.classList.remove('fa-chevron-down');
+                moreInfo.classList.add('fa-chevron-up');
+            } else {
+                registerLink.style.display = 'none';
+                moreInfo.classList.remove('fa-chevron-up');
+                moreInfo.classList.add('fa-chevron-down');
+            }
+        }
+    </script>
 </body>
 </html>
